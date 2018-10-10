@@ -24,7 +24,7 @@
 }
 .center .cen-nav dl {
   border-bottom: 1px solid #dedede;
-  min-height: 46px;
+  height: 46px;
   overflow: hidden;
 }
 .center .cen-nav dl dt {
@@ -39,12 +39,12 @@
 }
 .center .cen-nav dl dd {
   float: left;
-  width: 1078px;
-  min-height: 46px;
+  width: 960px;
+  height: 100%;
   padding-left: 10px;
 }
 .center .cen-nav dl dd .smallList {
-  height: 46px;
+  height: 100%;
   width: 960px;
   overflow: hidden;
 }
@@ -60,6 +60,13 @@
   margin-top: 12px;
   text-indent: 5px;
 }
+.center .cen-nav dl .more {
+  float: left;
+  margin-top: 12px;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
 .center .cen-nav .pingpai {
   height: 80px;
 }
@@ -67,10 +74,10 @@
   height: 100%;
 }
 .center .cen-nav .pingpai dd {
-  height: 80px;
+  height: 100%;
 }
 .center .cen-nav .pingpai dd .smallList {
-  height: 80px;
+  height: 100%;
 }
 .center .cen-nav .pingpai dd .smallList a {
   width: 155px;
@@ -84,10 +91,10 @@
   height: 100%;
 }
 .center .cen-nav .fenlei dd {
-  height: 80px;
+  height: 100%;
 }
 .center .cen-nav .fenlei dd .smallList {
-  height: 80px;
+  height: 100%;
 }
 .center .cen-nav .fenlei dd .smallList a {
   padding-left: 10px;
@@ -338,8 +345,110 @@
 }
 .center .cen-center .cen-content .con_item {
   width: 240px;
-  height: 360px;
+  height: 374px;
   float: left;
+  margin: 15px 14px 10px;
+  padding: 24px 14px 15px;
+  background: #fff;
+  border: 2px solid transparent;
+}
+.center .cen-center .cen-content .con_item img {
+  width: 240px;
+  height: 240px;
+}
+.center .cen-center .cen-content .con_item .con_item_span span {
+  width: 24px;
+  height: 16px;
+  margin-top: 15px;
+  margin-right: 3px;
+  padding: 0 4px;
+  color: #fff;
+  background: #000;
+}
+.center .cen-center .cen-content .con_item .con_item_span .s2 {
+  background: #e93b39;
+}
+.center .cen-center .cen-content .con_item .con_item_a {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 0px 3px;
+  border-top: 1px solid #EDEDED;
+}
+.center .cen-center .cen-content .con_item .con_item_a p {
+  color: #000;
+}
+.center .cen-center .cen-content .con_item .con_item_a p:hover {
+  text-decoration: underline;
+}
+.center .cen-center .cen-content .con_item .con_item_p {
+  font-size: 12px;
+  font-weight: bold;
+  height: 16px;
+  line-height: 16px;
+}
+.center .cen-center .cen-content .con_item .con_item_p i {
+  font-size: 12px;
+  font-weight: bold;
+}
+.center .cen-center .cen-content .con_item .shopping {
+  margin-top: 10px;
+  display: none;
+}
+.center .cen-center .cen-content .con_item .shopping a {
+  width: 70px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  display: block;
+  float: left;
+  color: #FFF;
+  background: #e93b39;
+}
+.center .cen-center .cen-content .con_item .shopping a:hover {
+  background: #d32220;
+}
+.center .cen-center .cen-content .con_item .shopping span {
+  display: block;
+  float: right;
+  font-size: 12px;
+  color: #999;
+}
+.center .cen-center .cen-content .con_item .shopping span em {
+  font-size: 12px;
+  margin-right: 2px;
+  font-weight: bold;
+}
+.center .cen-center .cen-content .con_item .shopping span:hover {
+  color: #e93b39;
+}
+.center .cen-center .cen-content .con_item:hover {
+  border-color: #EDEDED;
+}
+.center .cen-center .cen-content .con_item:hover .shopping {
+  display: block;
+}
+
+.fixedTop {
+  width: 40px;
+  height: 40px;
+  display: none;
+  position: fixed;
+  bottom: 20%;
+  right: 7%;
+  background: #FFF;
+  text-align: center;
+  line-height: 40px;
+  color: #000;
+}
+.fixedTop i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+}
+.fixedTop:hover {
+  background: #000;
+  color: #fff;
 }
 
 /*# sourceMappingURL=detail.css.map */

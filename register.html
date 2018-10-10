@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>寺库-注册</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/hearAndFooter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		
+	</head>
+	<body>
+		
+		<div class="headTop">
+			<div class="heT">
+				<div class="heT_logo">
+					<img src="image/min-logo.png">
+				</div>
+				<div class="heT_right">
+					<a href="index.html">寺库首页</a>
+					<a href="#">收藏寺库</a>
+					<a href="#">寺库APP</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="con">
+				<div class="reg">
+					<ul class="reg_register">
+						<li>
+							<span>用户名</span>
+							<div class="tips" id="userTips">请输入手机号或者邮箱</div>
+							<div class="li_input">
+								<input type="text" value="" id="user" />
+							</div>
+						</li>
+						<li>
+							<span>密码</span>
+							<div class="tips" id="pasTips"></div>
+							<div class="li_input">
+								<input type="password" value="" id="pas" />
+							</div>
+						</li>
+						<li>
+							<span>确认密码</span>
+							<div class="tips" id="pasTips2"></div>
+							<div class="li_input">
+								<input type="password" value="" id="pas2" />
+							</div>
+						</li>
+						<li>
+							<span>
+								<input type="checkbox" value="" id="che"/>贵宾邀请码
+							</span>
+							<div class="tips" id="txtTips"></div>
+							<div class="li_input f4" id="f4">
+								<input type="text" value="" id="txt"/>
+							</div>
+						</li>
+					</ul>
+					<div class="rag_bottom">
+						<button id="btn" class="btn" id="btn">立即注册</button>
+						<p>
+							<label>
+								<input type="checkbox" checked="checked" value="" />
+								我已阅读并同意
+							</label>
+							<a href="#">《 寺库网用户注册协议 》</a>
+						</p>
+						<div>
+							已经是寺库会员？
+							<a href="login.html">立即登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<div class="footer">
+			<div class="footer_top clear">
+				<ul>
+					<li><a href="#">新手指南</a></li>
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">物流配送</a></li>
+					<li><a href="#">售后服务</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">新手指南</a></li>
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">物流配送</a></li>
+					<li><a href="#">售后服务</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">新手指南</a></li>
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">物流配送</a></li>
+					<li><a href="#">售后服务</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">新手指南</a></li>
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">物流配送</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer_bottom">
+				<ul class="clear">
+					<li><img src="image/pcfooterbatb.png" class="pcfooter">京公安备11010102001392</li>
+					<li>京ICP证110119号 京ICP备09084709号-3</li>
+					<li>ISO9001中国质量管理体系认证</li>
+					<li>出版物经营许可证</li>
+					<li>食品经营许可证</li>
+				</ul>
+				<ul class="clear">
+					<li>京B2-20181305</li>
+					<li>京食药网食备201810026</li>
+					<li>客服电话：400-875-6789</li>
+					<li>COPYRIGHT &copy; 2010-2018 北京寺库商贸有限公司 版权所有</li>
+				</ul>
+				<ul class="clear">
+					<li><img src="image/f_01.jpg" alt="" /></li>
+					<li><img src="image/f_04.jpg" alt="" /></li>
+					<li><img src="image/cnnic.png" alt="" /></li>
+					<li><img src="image/kexin.jpg" alt="" /></li>
+					<li><img src="image/f_03.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+</html>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/myCookie.js"></script>
+<script src="js/register.js"></script>
+<script>
+	yz();
+	$("#che").click(function(){
+		invite();
+	});
+</script>

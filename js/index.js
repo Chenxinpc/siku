@@ -28,6 +28,7 @@ function ajaxIndex(url){
 				li[j].innerHTML = strA;
 				j++;
 			}
+			
 		}
 	}
 }

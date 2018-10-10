@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>寺库网用户登录_免费注册_手机注册 – 寺库网</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/hearAndFooter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+	<body>
+		<div class="headTop">
+			<div class="heT">
+				<div class="heT_logo">
+					<img src="image/min-logo.png">
+				</div>
+				<div class="heT_right">
+					<a href="index.html">寺库首页</a>
+					<a href="#">收藏寺库</a>
+					<a href="#">寺库APP</a>
+				</div>
+			</div>
+		</div>
+		
+			<div class="content">
+				<div class="con">
+					<div class="reg">
+						<ul class="reg_login" id="reg_login">
+							<li class="on">扫码登录</li>
+							<li>密码登录</li>
+						</ul>
+						<div class="sm" id="sm">
+							<div class="ewmBox">
+								<img src="image/erweima.png" class="ewmImg">
+								<img src="image/ewmts.jpg" class="ewmts">
+							</div>
+							<p class="textts">
+								打开
+								<a href="#">寺库app</a>
+								扫一扫登录
+							</p>
+						</div>
+						
+						<div class="mima" id="mima">
+							
+							<ul>
+								<li>
+									<input type="text" placeholder="用户名/手机号/邮箱" class="input" id="user" value=""/>
+									<i class="iconfont icon-yonghu" id="i1"></i>
+								</li>
+								<li>
+									<input type="password" placeholder="密码" class="input" value="" id="pass"/>
+									<i class="iconfont icon-mima" id="i2"></i>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" checked="checked" />
+										记住账号
+									</label>
+								</li>
+							</ul>
+							
+							<div class="btn_submit">
+								<input type="button" value="立即登录" class="mima_btn" id="mima_btn"/>
+							</div>
+						</div>
+						
+						<div class="jiathis">
+							<p>使用合作网站账号登录</p>
+							<p>
+								<a>
+									<img src="image/qq.jpg">
+									<span>QQ</span>
+								</a>
+								<a>
+									<img src="image/WeChat.png">
+									<span>微信</span>
+								</a>
+							</p>
+						</div>
+						<div class="msg">
+							<span class="fl">
+								还不是寺库会员？
+								<a href="register.html">免费注册</a>
+							</span>
+							<span class="fr">
+								<a href="#">忘记密码？</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<div class="footer">
+			<div class="footer_top clear">
+				<ul>
+					<li><a href="#">新手指南</a></li>
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">物流配送</a></li>
+					<li><a href="#">售后服务</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">新手指南</a></li>
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">物流配送</a></li>
+					<li><a href="#">售后服务</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">新手指南</a></li>
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">物流配送</a></li>
+					<li><a href="#">售后服务</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">新手指南</a></li>
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">物流配送</a></li>
+				</ul>
+			</div>
+			
+		
+			
+			
+			<div class="footer_bottom">
+				<ul class="clear">
+					<li><img src="image/pcfooterbatb.png" class="pcfooter">京公安备11010102001392</li>
+					<li>京ICP证110119号 京ICP备09084709号-3</li>
+					<li>ISO9001中国质量管理体系认证</li>
+					<li>出版物经营许可证</li>
+					<li>食品经营许可证</li>
+				</ul>
+				<ul class="clear">
+					<li>京B2-20181305</li>
+					<li>京食药网食备201810026</li>
+					<li>客服电话：400-875-6789</li>
+					<li>COPYRIGHT &copy; 2010-2018 北京寺库商贸有限公司 版权所有</li>
+				</ul>
+				<ul class="clear">
+					<li><img src="image/f_01.jpg" alt="" /></li>
+					<li><img src="image/f_04.jpg" alt="" /></li>
+					<li><img src="image/cnnic.png" alt="" /></li>
+					<li><img src="image/kexin.jpg" alt="" /></li>
+					<li><img src="image/f_03.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/myCookie.js"></script>
+<script src="js/login.js"></script>
+<script>
+	var regLogin = $("#reg_login");
+	var regLoginLi = regLogin.children();
+	var ft = false;
+	regLoginLi.click(function(){
+		$(this).addClass("on").siblings().removeClass("on")
+		if(ft){
+			$("#sm").css("display","block");
+			$("#mima").css("display","none");
+			ft = false;
+		} else {
+			$("#mima").css("display","block");
+			$("#sm").css("display","none");
+			ft = true;
+		}
+	});
+	
+	
+</script>
+

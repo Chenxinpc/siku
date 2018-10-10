@@ -1,0 +1,297 @@
+body {
+  background: #fdf8f4 url(../image/login.jpg) no-repeat center top;
+}
+
+.headTop {
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.headTop .heT {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+}
+.headTop .heT .heT_logo {
+  height: 100%;
+  float: left;
+}
+.headTop .heT .heT_right {
+  height: 100%;
+  float: right;
+}
+.headTop .heT .heT_right a {
+  float: left;
+  height: 100%;
+  width: 48px;
+  padding: 0 10px;
+  text-align: center;
+  line-height: 70px;
+  color: #999;
+}
+.headTop .heT .heT_right a:hover {
+  color: #c69c6d;
+}
+
+.content {
+  width: 100%;
+  height: 740px;
+}
+.content .con {
+  width: 1200px;
+  height: 740px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.content .con .reg {
+  float: right;
+  margin-top: 80px;
+  padding: 30px 35px;
+  width: 310px;
+  height: auto;
+  background: #fff;
+}
+.content .con .reg .reg_register li span {
+  width: 60px;
+  height: 40px;
+  float: left;
+  color: #666;
+  line-height: 40px;
+}
+.content .con .reg .reg_register li .tips {
+  width: 240px;
+  height: 40px;
+  float: right;
+  text-align: right;
+  font-size: 14px;
+  color: #999;
+  line-height: 40px;
+}
+.content .con .reg .reg_register li .li_input {
+  float: left;
+}
+.content .con .reg .reg_register li .li_input input {
+  width: 298px;
+  height: 20px;
+  padding: 10px 5px;
+  border: 1px solid #ededed;
+}
+.content .con .reg .reg_register li .li_input input:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(240, 127, 5, 0.4);
+  border-color: #9d003f;
+}
+.content .con .reg .reg_register li:nth-child(4) span {
+  width: 80px;
+  position: relative;
+  padding-left: 15px;
+}
+.content .con .reg .reg_register li:nth-child(4) span input {
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+.content .con .reg .reg_register li:nth-child(4) .tips {
+  width: 200px;
+}
+.content .con .reg .reg_register li:nth-child(4) .f4 {
+  display: none;
+}
+.content .con .reg .rag_bottom .btn {
+  width: 310px;
+  height: 50px;
+  background: #f19108;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+.content .con .reg .rag_bottom p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px 0;
+  color: #999;
+  position: relative;
+}
+.content .con .reg .rag_bottom p label {
+  width: 300px;
+  padding-left: 15px;
+}
+.content .con .reg .rag_bottom p input {
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+.content .con .reg .rag_bottom div {
+  padding-top: 30px;
+  width: 100%;
+  color: #999999;
+}
+.content .con .reg .rag_bottom div a {
+  color: #f19108;
+}
+.content .con .reg .reg_login {
+  height: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.content .con .reg .reg_login li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+}
+.content .con .reg .reg_login .on {
+  color: #f19108;
+}
+.content .con .reg .sm {
+  width: 100%;
+  margin-bottom: 30px;
+  display: block;
+}
+.content .con .reg .sm .ewmBox {
+  width: 100%;
+  height: 192px;
+  position: relative;
+}
+.content .con .reg .sm .ewmBox .ewmImg {
+  width: 192px;
+  position: absolute;
+  left: 59px;
+  top: 0;
+  transition: all 0.5s;
+}
+.content .con .reg .sm .ewmBox .ewmts {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 160px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.content .con .reg .sm .ewmBox:hover .ewmImg {
+  width: 136px;
+  left: 0;
+}
+.content .con .reg .sm .ewmBox:hover .ewmts {
+  opacity: 1;
+}
+.content .con .reg .sm .textts {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-top: 35px;
+}
+.content .con .reg .sm .textts a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #F19108;
+  margin: 0 5px;
+  text-decoration: underline;
+}
+.content .con .reg .mima {
+  width: 100%;
+  margin-bottom: 30px;
+  display: none;
+}
+.content .con .reg .mima ul li {
+  width: 310px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.content .con .reg .mima ul li .input {
+  width: 298px;
+  height: 20px;
+  line-height: 20px;
+  padding: 14px 5px;
+  border: 1px solid #DEDEDE;
+  font-size: 14px;
+  color: #999;
+}
+.content .con .reg .mima ul li .input:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(240, 127, 5, 0.4);
+  border-color: #9d003f;
+}
+.content .con .reg .mima ul li i {
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  width: 15px;
+  height: 17px;
+  color: #999;
+}
+.content .con .reg .mima ul li:nth-child(3) label {
+  position: relative;
+}
+.content .con .reg .mima ul li:nth-child(3) label input {
+  position: relative;
+  top: 3px;
+  left: 0;
+}
+.content .con .reg .mima .btn_submit {
+  padding: 9px 0 8px 0;
+  position: relative;
+}
+.content .con .reg .mima .btn_submit .mima_btn {
+  width: 100%;
+  background: #F19108;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.content .con .reg .jiathis {
+  padding-bottom: 30px;
+}
+.content .con .reg .jiathis p {
+  color: #999;
+  padding: 5px 0;
+}
+.content .con .reg .jiathis p a {
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+.content .con .reg .jiathis p a img {
+  float: left;
+  height: 24px;
+  vertical-align: middle;
+}
+.content .con .reg .jiathis p a span {
+  float: left;
+  margin-left: 5px;
+}
+.content .con .reg .jiathis p a:nth-child(1) img {
+  height: 15px;
+}
+.content .con .reg .jiathis p a:hover {
+  color: #9c003f;
+}
+.content .con .reg .msg {
+  width: 100%;
+}
+.content .con .reg .msg .fl {
+  float: left;
+  color: #999;
+}
+.content .con .reg .msg .fl a {
+  color: #F19108;
+}
+.content .con .reg .msg .fr {
+  float: right;
+  color: #999;
+}
+
+/*# sourceMappingURL=register.css.map */

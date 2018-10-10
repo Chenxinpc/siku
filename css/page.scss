@@ -1,0 +1,574 @@
+body {
+    width: 100%;
+    height: auto;
+    background: #EDEDED;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    .samllNav {
+        width: 100%;
+        padding: 30px 0px 20px;
+        position: relative;
+        p {
+            color: #666;
+            font-size: 12px;
+            a {
+                padding: 5px;
+            }
+        }
+        span {
+            position: absolute;
+            right: 0px;
+            top: 30px;
+            color: #666;
+            height: 30px;
+        }
+    }
+    .contents {
+        width: 1110px;
+        padding: 40px 50px 12px 40px;
+        background: #fff;
+        .info_l {
+            float: left;
+            height: 400px;
+            width: 481px;
+            border: 1px solid #EDEDED;
+            margin-bottom: 85px;
+            dl {
+                dd {
+                    width: 80px;
+                    height: 400px;
+                    border-right: 1px solid #EDEDED;
+                    float: left;
+                    position: relative;
+                    overflow: hidden;
+                    .move_box {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 400px;
+                        overflow: hidden;
+                        width: 80px;
+                        div {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            a {
+                                display: block;
+                                width: 80px;
+                                height: 79px;
+                                margin-bottom: 1px;
+                                position: relative;
+                                overflow: hidden;
+                                img {
+                                    width: 80px;
+                                    height: 80px;
+                                }
+                                div {
+                                    width: 80px;
+                                    height: 79px;
+                                    display: none;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    span {
+                                        &:nth-child(1) {
+                                            display: block;
+                                            position: absolute;
+                                            left: 0;
+                                            top: 0;
+                                            width: 6px;
+                                            height: 6px;
+                                            border-top: 2px solid #554993;
+                                            border-left: 2px solid #554993;
+                                        }
+                                        &:nth-child(2) {
+                                            display: block;
+                                            position: absolute;
+                                            right: 0;
+                                            top: 0;
+                                            width: 6px;
+                                            height: 6px;
+                                            border-top: 2px solid #554993;
+                                            border-right: 2px solid #554993;
+                                        }
+                                        &:nth-child(3) {
+                                            display: block;
+                                            position: absolute;
+                                            left: 0;
+                                            bottom: 0;
+                                            width: 6px;
+                                            height: 6px;
+                                            border-bottom: 2px solid #554993;
+                                            border-left: 2px solid #554993;
+                                        }
+                                        &:nth-child(4) {
+                                            display: block;
+                                            position: absolute;
+                                            right: 0;
+                                            bottom: 0;
+                                            width: 6px;
+                                            height: 6px;
+                                            border-bottom: 2px solid #554993;
+                                            border-right: 2px solid #554993;
+                                        }
+                                    }
+                                }
+                                &:hover div {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+                dt {
+                    width: 400px;
+                    height: 400px;
+                    float: left;
+                    position: relative;
+                    .dtImg_div{
+                        width: 400px;
+                        height: 400px;
+                        .dt_img {
+                            width: 400px;
+                            height: 400px;
+                        }
+                    }
+                    
+                    .zoomspan {
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        background: #8C8C8C;
+                        opacity: 0.3;
+                        width: 200px;
+                        height: 200px;
+                        text-align: center;
+                        overflow: hidden;
+                    }
+                    .enlarge{
+                        display: none;
+                        position: absolute;
+                        left: 110%;
+                        top: 0;
+                        width: 460px;
+                        height: 400px;
+                        background: #fff;
+                        overflow: hidden;
+                        z-index: 555;
+                        border: 1px solid #EDEDED;
+                        img{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+            .share_box {
+                padding: 20px 0px 0px 14px;
+                span {
+                    display: inline-block;
+                    width: 80px;
+                    i {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        padding-right: 5px;
+                        color: #7e68b3;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    a {
+                        color: #666;
+                        &:hover {
+                            color: #e93a38;
+                        }
+                    }
+                }
+            }
+        }
+        .info_r {
+            float: right;
+            width: 597px;
+            min-height: 400px;
+            .proName {
+                padding: 0 0 20px 20px;
+                h2 {
+                    width: 450px;
+                    font-size: 16px;
+                    color: #323232;
+                    word-break: break-all;
+                    word-wrap: break-word;
+                }
+            }
+            .proDetails {
+                padding: 15px 0 10px 20px;
+                color: #666666;
+                position: relative;
+                width: 100%;
+                border-top: 1px dashed #EDEDED;
+                border-bottom: 1px dashed #EDEDED;
+                .proList {
+                    margin-bottom: 8px;
+                    width: 100%;
+                    height: 24px;
+                    .proList_fl {
+                        float: left;
+                        width: 60px;
+                        height: 24px;
+                        line-height: 24px;
+                        padding-right: 17px;
+                    }
+                    .proList_fr {
+                        float: left;
+                        span {
+                            margin-right: 10px;
+                            em {
+                                color: #7e68b3;
+                                margin-right: 4px;
+                            }
+                            i {
+                                color: #e93b39;
+                            }
+                        }
+                    }
+                    &:nth-child(1) {
+                        height: 35px;
+                        .proList_fl {
+                            font-size: 18px;
+                            color: #e93a38;
+                        }
+                        .proList_fr {
+                            font-size: 30px;
+                            font-weight: 500;
+                            color: #e93a38;
+                            display: inline-block;
+                            line-height: 28px;
+                            font-family: tahoma;
+                            b {
+                                font-size: 12px;
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            .proList_box {
+                padding: 24px 0 0 20px;
+                color: #666666;
+                position: relative;
+                .proList {
+                    margin-bottom: 14px;
+                    height: 24px;
+                    width: 100%;
+                    .pdt {
+                        float: left;
+                        width: 60px;
+                        padding-right: 17px;
+                        line-height: 24px;
+                        font-family: simsun;
+                    }
+                    .pdd {
+                        float: left;
+                        .proPdd-1 {
+                            border: 2px solid #806ab4;
+                            text-align: center;
+                            width: 35px;
+                            height: 35px;
+                            display: block;
+                            margin-top: -12px;
+                            img {
+                                height: 35px;
+                            }
+                        }
+                        .countNm {
+                            float: left;
+                            margin-right: 20px;
+                            a {
+                                display: block;
+                                width: 21px;
+                                height: 22px;
+                                text-align: center;
+                                font-size: 16px;
+                                line-height: 22px;
+                                font-weight: 1000;
+                                border: 1px solid #CCCCCC;
+                                background: #EDEDED;
+                                float: left;
+                            }
+                            span {
+                                float: left;
+                                height: 19px;
+                                padding-top: 3px;
+                                background: #FFF;
+                                border-top: 1px solid #ededed;
+                                border-bottom: 1px solid #ededed;
+                                input {
+                                    border: 0 none;
+                                    display: block;
+                                    width: 34px;
+                                    height: 18px;
+                                    line-height: 18px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        .delivery {
+                            float: left;
+                            width: 200px;
+                            height: 22px;
+                            line-height: 22px;
+                            .color {
+                                color: #e93b39;
+                                margin: 0 4px;
+                            }
+                        }
+                    }
+                }
+                .prompt {
+                    margin-top: 10px;
+                    .pqrCode {
+                        float: left;
+                        img {
+                            width: 159px;
+                            height: 147px;
+                            margin-left: 10px;
+                        }
+                        p {
+                            width: 179px;
+                            height: 16px;
+                            margin-top: 15px;
+                            text-align: center;
+                        }
+                    }
+                    a {
+                        float: left;
+                        width: 160px;
+                        height: 45px;
+                        display: block;
+                        margin: 2px 20px 20px 0;
+                    }
+                    .to1 {
+                        background: red;
+                        border: 2px solid red;
+                        color: #FFF;
+                        text-align: center;
+                        line-height: 45px;
+                        font-size: 20px;
+                    }
+                    .to2 {
+                        background: #FFF;
+                        border: 2px solid red;
+                        text-align: center;
+                        line-height: 45px;
+                        font-size: 20px;
+                        color: red;
+                        i {
+                            font-size: 20px;
+                            font-weight: bolder;
+                            margin-right: 4px;
+                        }
+                    }
+                    .to3 {
+                        height: 20px;
+                        margin: 21px 20px 20px 0;
+                        i {
+                            font-size: 15px;
+                            color: #7e68b3;
+                            display: inline-block;
+                            width: 14px;
+                            height: 18px;
+                            margin-right: 5px;
+                            border: 2px solid #7e68b3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .showAdds {
+        padding-top: 30px;
+        width: 1210px;
+        margin-left: -5px;
+        .showAddsLeft {
+            width: 200px;
+            padding: 0 5px;
+            float: left;
+            h3 {
+                height: 36px;
+                width: 100%;
+                font-size: 12px;
+                line-height: 36px;
+                text-align: center;
+                color: #fff;
+                background-color: #333333;
+            }
+            .marTop_15 {
+                margin-top: 15px;
+            }
+            .showLeftCon {
+                box-shadow: 0 2px 5px #ccc;
+                margin-bottom: 15px;
+                width: 200px;
+                border-top: 0;
+                background: #fff;
+                ul {
+                    padding-bottom: 10px;
+                    width: 160px;
+                    margin: 0 auto;
+                    li {
+                        width: 150px;
+                        height: 71px;
+                        margin: 0 auto;
+                        border-top: 1px solid #f1f1f1;
+                        padding: 10px 0;
+                        position: relative;
+                        .sPic {
+                            float: left;
+                            margin-top: 10px;
+                            img {
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                        .sbox {
+                            float: right;
+                            width: 90px;
+                            .sName {
+                                height: 36px;
+                                line-height: 18px;
+                                padding-top: 5px;
+                                color: #656565;
+                                overflow: hidden;
+                            }
+                            .sPri {
+                                color: #656565;
+                                padding-top: 5px;
+                                strong {
+                                    font-weight: bold;
+                                    .rmb {
+                                        font-family: Microsoft yahei;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .showAddsRight {
+            float: right;
+            width: 970px;
+            overflow: hidden;
+            padding: 0 5px;
+            .s-left-list {
+                ul {
+                    li {
+                        color: #fff;
+                        height: 36px;
+                        line-height: 36px;
+                        text-align: center;
+                        float: left;
+                        width: 151px;
+                        position: relative;
+                        cursor: pointer;
+                        background-color: #333333;
+                        border-right: 1px solid #fff;
+                        a {
+                            color: #fff;
+                            display: inline-block;
+                            width: 100%;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+            .s-left-box {
+                box-shadow: 0 2px 5px #ccc;
+                background: #fff;
+                margin-bottom: 30px;
+                
+                .product-detail-div{
+                    padding: 0px 30px;
+                    overflow: hidden;
+                    display: block;
+                    .product-detail-banner{
+                        margin: 40px 0 0;
+                        
+                    }
+                    .moudle_details{
+                        .moule_top{
+                            height: 17px;
+                            overflow: hidden;
+                            width: 100%;
+                            position: relative;
+                            padding: 50px 0 20px;
+                            span{
+                                display: block;
+                                height: 17px;
+                                font-size: 17px;
+                                font-weight: bold;
+                            }
+                        }
+                        
+                        p{
+                            width: 100%;
+                            padding-bottom: 10px;
+                            img{
+                                width: 750px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    
+                    .t-info{
+                        line-height: 25px;
+                        table{
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                            tbody{
+                                tr{
+                                    td{
+                                        background: #f6f6f6;
+                                        border: 2px solid #fff;
+                                        line-height: 28px;
+                                        height: 30px;
+                                        padding-left: 25px;
+                                        color: #333;
+                                        width: 198px;
+                                        overflow: hidden;
+                                        float: left;
+                                        .zxx_con{
+                                            float: left;
+                                            height: 1.9em;
+                                            margin-right: 1em;
+                                            overflow: hidden;
+                                            word-break: break-all;
+                                            a{
+                                                word-wrap: break-word;
+                                                overflow: hidden;
+                                                display: inline-block;
+                                                max-width: 95px;
+                                                height: 28px;
+                                                word-break: break-all;
+                                                vertical-align: bottom;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    
+                    
+                }
+                
+            }
+        }
+    }
+}

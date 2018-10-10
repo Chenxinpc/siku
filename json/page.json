@@ -1,0 +1,56 @@
+{
+	"goods111":{
+		"pic":{
+			"small-1":"z1.jpg",
+			"small-2":"z2.jpg",
+			"small-3":"z3.jpg",
+			"big-1":"d1.jpg",
+			"big-2":"d2.jpg",
+			"big-3":"d3.jpg"
+		},
+		"list":{
+			"title":"MICHAEL MICHAEL KORS/ 迈克·科尔斯 女士黑色牛皮中款SELMA斜挎包 30T3GLMM2LBLACK",
+			"pirce":"1198",
+			"address":"香港",
+			"date":"5-10",
+			"tips":"本商品无质量问题不支持退换货",
+			"tips2":"自营",
+			"color":"right-min.jpg",
+			"num":"1"
+		},
+		"show":{
+			
+			"p1":"d1.jpg",
+			"p2":"d2.jpg",
+			"p3":"d3.jpg",
+			"p4":"dd.jpg"
+		
+		}
+	},
+	"goods112":{
+		"pic":{
+			"small-1":"lf_x1.jpg",
+			"small-2":"lf_x2.jpg",
+			"small-3":"lf_x3.jpg",
+			"big-1":"lf_d1.jpg",
+			"big-2":"lf_d2.jpg",
+			"big-3":"lf_d3.jpg"
+		},
+		"list":{
+			"title":"FURLA/芙拉 18秋冬 女士 单肩包 logo 字母 4097",
+			"pirce":"1499",
+			"address":"欧洲",
+			"date":"7-10",
+			"tips":"本商品无质量问题不支持退换货",
+			"tips2":"自营",
+			"color":"lf_min.jpg",
+			"num":"1"
+		},
+		"show":{
+			"p1":"lf_d1.jpg",
+			"p2":"lf_d2.jpg",
+			"p3":"lf_d3.jpg",
+			"p4":"lf_d4.jpg"
+		}
+	}
+}
