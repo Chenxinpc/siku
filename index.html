@@ -36,7 +36,7 @@
 						<a href="#">媒体聚焦</a>
 					</li>
 				</ul>
-				<div class="head_r_p"><em class="iconfont icon-gouwuche"></em><i>购物车</i><span>(0)</span></div>
+				<div class="head_r_p" id="head_r_p"><em class="iconfont icon-gouwuche"></em><i>购物车</i><span>(0)</span></div>
 			</div>
 		</div>
 		<div class="nav">
@@ -52,55 +52,55 @@
 						</div>
 					</div>
 					<div class="nav-item">
-						<a href="#">腕表</a>
+						<a href="detail.html">腕表</a>
 						<div class="nav-unfold">
 							<div class="ncontainer"></div>
 						</div>
 					</div>
 					<div class="nav-item">
-						<a href="#">珠宝首饰</a>
+						<a href="detail.html">珠宝首饰</a>
 						<div class="nav-unfold">
 							<div class="ncontainer"></div>
 						</div>
 					</div>
 					<div class="nav-item">
-						<a href="#">服装鞋靴</a>
+						<a href="detail.html">服装鞋靴</a>
 						<div class="nav-unfold">
 							<div class="ncontainer"></div>
 						</div>
 					</div>
 					<div class="nav-item">
-						<a href="#">配饰</a>
+						<a href="detail.html">配饰</a>
 						<div class="nav-unfold">
 							<div class="ncontainer"></div>
 						</div>
 					</div>
 					<div class="nav-item">
-						<a href="#">体育运动</a>
+						<a href="detail.html">体育运动</a>
 						<div class="nav-unfold">
 							<div class="ncontainer"></div>
 						</div>
 					</div>
 					<div class="nav-item">
-						<a href="#">家居生活</a>
+						<a href="detail.html">家居生活</a>
 						<div class="nav-unfold">
 							<div class="ncontainer"></div>
 						</div>
 					</div>
 					<div class="nav-item">
-						<a href="#">生活方式</a>
+						<a href="detail.html">生活方式</a>
 						<div class="nav-unfold">
 							<div class="ncontainer"></div>
 						</div>
 					</div>
 					<div class="nav-item">
-						<a href="#">母婴美妆</a>
+						<a href="detail.html">母婴美妆</a>
 						<div class="nav-unfold">
 							<div class="ncontainer"></div>
 						</div>
 					</div>
 					<div class="nav-item">
-						<a href="#">豪车频道</a>
+						<a href="detail.html">豪车频道</a>
 						<div class="nav-unfold">
 							<div class="ncontainer"></div>
 						</div>
@@ -284,6 +284,11 @@
 		new banner().init().broadcast();
 		//商品展示轮播图
 		new centerUl().init().move();
+		
+		document.getElementById("head_r_p").onclick = function(){
+			location.href = "shopcar.html";
+		}
+		
 	}
 	
 

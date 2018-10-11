@@ -9,7 +9,6 @@ function ajaxIndex(url){
 			var text = JSON.parse(ajax.responseText);
 			var str = "";
 			for (var attr in text){
-//				console.log(text[attr]);
 				str += "<li></li>"
 			}
 			ul.innerHTML = str;
@@ -19,7 +18,7 @@ function ajaxIndex(url){
 				var strA = "";
 				for(var k=0; k<text[i].list.length; k++){
 					var list = text[i].list[k];
-					strA += `<a href="${list.href}">
+					strA += `<a href="page.html?name=${list.href}">
 								<div><img src="${list.src}" /></div>
 								<p>${list.name}</p>
 								<p>${list.pirce}</p>
@@ -80,6 +79,7 @@ function banner() {
 			if(this.i == this.arr.length){
 				this.i = 0;
 			}
+			
 			this.img.src = `image/${this.arr[this.i]}.jpg`;
 			this.li[this.i].className = "active";
 		}.bind(this)

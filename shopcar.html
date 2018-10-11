@@ -37,7 +37,7 @@
 							<thead>
 								<tr>
 									<th width="75">
-										<input type="checkbox" name="choseAll" id="choseAll" checked="checked"/>
+										<input type="checkbox" class="choseAll" name="choseAll" id="choseAll"/>
 										<label for="choseAll">全选</label>
 									</th>
 									<th width="355" colspan="2">商品名称</th>
@@ -83,7 +83,7 @@
 									</td>
 									
 									<td valign="top">
-										<strong class="colore93">
+										<strong class="colore93" id="sum" class="sum">
 											<span class="reb colore93">￥</span>
 											1769元
 										</strong>
@@ -100,18 +100,18 @@
 					<div class="cartPrice">
 						<div class="cartAno">
 							<div class="ano01">
-								<input name="choseAll" type="checkbox" id="choseAll" checked="checked" />
+								<input name="choseAll" class="choseAll" type="checkbox" id="choseAll"/>
 								<label for="choseAll">全选</label>
 							</div>
 							<div class="ano02">
-								<a href="###">删除选中商品</a>
+								<a href="###" id="delete">删除选中商品</a>
 							</div>
 						</div>
-						<p id="shopNum"><!--商品数量总计：0件--></p>
+						<p id="shopNum">商品数量总计：0件</p>
 						<p>包装数量总计：0件</p>
 						<p>返利库币：0库币</p>
 						<p class="totalPriceBottom" id="totalPriceBottom">
-							商品金额总计(不含税金和运费)：<span class="rmd"></span><strong>3419.00</strong>
+							商品金额总计(不含税金和运费)：<span class="rmd"></span><strong id="money">0</strong>
 						</p>
 						<p class="clear">
 							<a href="index.html" class="a01" target="_blank">继续购物</a>
@@ -136,15 +136,6 @@
 <script>
 	window.onload = function(){
 		obtainCookie();
-		
-		
-		$(".del").click(function(){
-			var id = $(this).data("id");
-			console.log(id);
-		})
-		
-		
-		
 	}
 </script>
 
