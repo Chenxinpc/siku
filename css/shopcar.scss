@@ -1,0 +1,224 @@
+html,body{
+    width: 100%;
+}
+input[type=checkbox]{
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+.head{
+    width: 100%;
+    background: #323232;
+    height: 70px;
+    overflow: hidden;
+    .carHader{
+        width: 990px;
+        margin: 0 auto;
+        .logo{
+            float: left;
+        }
+        .carHader_fr{
+            float: right;
+        }
+    }
+}
+
+.center{
+    padding-bottom: 20px;
+    width: 100%;
+    background: #f6f6f6;
+    .centerBox {
+        width: 990px;
+        margin: 0 auto;
+        padding: 30px 0;
+        .carNav{
+            position: relative;
+            z-index: 2;
+            color: #666;
+            margin-bottom: -2px;
+            .navLogin{
+                line-height: 28px;
+                margin-top: 4px;
+                padding-left: 18px;
+                float: left;
+                a{
+                    color: #E93B39;
+                    padding: 0 10px;
+                }
+            }
+        }
+        .cartBox{
+            .cartSlist{
+                width: 986px;
+                border: 1px solid #f1f1f1;
+                padding: 1px;
+                background: #fff;
+                position: relative;
+                z-index: 1;
+                .carTable{
+                    width: 100%;
+                    color: #666;
+                    tr{
+                        th{
+                            height: 48px;
+                            font-weight: normal;
+                            color: #999999;
+                            border-bottom: 1px solid #fff;
+                            background: url(../image/c_02.jpg);
+                        }
+                        td{
+                            padding: 20px 0 15px;
+                            border-top: 1px solid #ececec;
+                            text-align: center;
+                            line-height: 22px;
+                            margin-top: -1px;
+                            
+                            .carPic{
+                                padding-right: 15px;
+                                float: left;
+                                
+                                img{
+                                    border: 1px solid #ECECEC;
+                                }
+                            }
+                            
+                            .cartNames{
+                                width: 255px;
+                                overflow: hidden;
+                                float: left;
+                                text-align: left;
+                                .namePro{
+                                    width: 100%;
+                                    a{
+                                        color: #333;
+                                        &:hover{
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                            }
+                            .rmd{
+                                font-family: microsoft yahei;
+                            }
+                            
+                            .countNum{
+                                width: 58px;
+                                margin: 0 auto 2px;
+                                overflow: hidden;
+                                .cPlus, .cMinus {
+                                    width: 11px;
+                                    height: 18px;
+                                    float: left;
+                                    line-height: 16px;
+                                    text-align: center;
+                                    color: #666;
+                                    padding-right: 1px;
+                                    cursor: pointer;
+                                    background-color: #fff;
+                                    border: 1px solid #eaeaea;
+                                }
+                                .cInput{
+                                    margin-top: -1px;
+                                    float: left;
+                                    .Num{
+                                        width: 30px;
+                                        height: 18px;
+                                        line-height: 18px;
+                                        text-align: center;
+                                        border: 1px solid #eaeaea;
+                                        border-left: 0;
+                                        border-right: 0;
+                                        color: #666;
+                                    }
+                                }
+                            }
+                            
+                            .colore93{
+                                color: #e93b39;
+                            }
+                            .del{
+                                color: #333;
+                            }
+                            
+                        }
+                        .addChecked td{
+                            background: #fdf0ef;
+                        }
+                    }
+                }
+            }
+            .cartPrice{
+                padding: 15px 45px 25px 30px;
+                margin-top: 6px;
+                position: relative;
+                background: #fff;
+                border: 1px solid #f1f1f1;
+                .cartAno{
+                    width: 300px;
+                    height: 30px;
+                    position: absolute;
+                    left: 31px;
+                    top: 17px;
+                    overflow: hidden;
+                    .ano01{
+                        width: 78px;
+                        position: relative;
+                        top: 1px;
+                        float: left;
+                    }
+                    .ano02{
+                        padding-left: 20px;
+                        background: url(../image/c_06.jpg) no-repeat 0px 0px;
+                        cursor: pointer;
+                        color: #c69c6d;
+                        height: 16px;
+                        line-height: 16px;
+                        padding-top: 1px;
+                        float: left;
+                        a{
+                            color: #666;
+                        }
+                    }
+                }
+                p{
+                    text-align: right;
+                    padding: 4px 0;
+                    color: #333;
+                    span{
+                        color: #9d003f;
+                        font-family: "microsoft yahei";
+                        font-size: 14px;
+                        
+                    }
+                    strong{
+                        font-family: tahoma;
+                        color: #E93B39;
+                        font-size: 30px;
+                        font-weight: normal;
+                    }
+                    .a01{
+                        padding: 5px 15px;
+                        border: 1px solid #E93B39;
+                        color: #E93B39;
+                        background: none;
+                        margin-top: 12px;
+                        float: left;
+                    }
+                    .a02{
+                        padding: 10px 40px;
+                        background: #E93B39;
+                        color: #fff;
+                        font-weight: bold;
+                        font-size: 14px;
+                        font-family: "microsoft yahei";
+                        float: right;
+                    }
+                }
+                .totalPriceBottom{
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/shopcar.css"/>
+	</head>
+	<body>
+		
+		<div class="head">
+			<div class="carHader">
+				<div class="logo">
+					<a href="index.html">
+						<img src="image/min-logo.png">
+					</a>
+				</div>
+				<div class="carHader_fr">
+					<img src="image/c_05.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="center">
+			<div class="centerBox">
+				<div class="carNav">
+					<div class="navLogin">
+						现在<a href="login.html">登录</a>您购物车中的商品将被永久保存
+					</div>
+				</div>
+				<div class="cartBox">
+					
+					<div class="cartSlist">
+						
+						<table cellspacing="0" cellpadding="0" border="0" class="carTable">
+							<thead>
+								<tr>
+									<th width="75">
+										<input type="checkbox" name="choseAll" id="choseAll" checked="checked"/>
+										<label for="choseAll">全选</label>
+									</th>
+									<th width="355" colspan="2">商品名称</th>
+									<th width="96">发货站</th>
+									<th width="96">价格</th>
+									<th width="140">数量</th>
+									<th width="110">金额小计</th>
+									<th width="110">操作</th>
+								</tr>
+							</thead>
+							
+							<tbody id="tbody">
+								<!--<tr class="addChecked">
+									<td>
+										<input type="checkbox" class="checkBox" checked="checked"/>
+									</td>
+									<td width="97" valign="top">
+										<div class="carPic">
+											<a href="#" target="_blank">
+												<img src="baoimg/bao1.jpg" width="80" height="80"/>
+											</a>
+										</div>
+									</td>
+									<td valign="top">
+										<div class="cartNames">
+											<p class="namePro">
+												<a href="#" target="_blank">FURLA/芙拉 METROPOLIS系列女士牛皮单肩斜挎包 820676</a>
+											</p>
+										</div>
+									</td>
+									<td valign="top">中国大陆</td>
+									<td valign="top">
+										<span class="rmb">￥</span>1769
+									</td>
+									<td valign="top">
+										<div class="countNum">
+											<div class="cPlus">-</div>
+											<div class="cInput">
+												<input class="Num" type="text" value="1" />
+											</div>
+											<div class="cMinus">+</div>
+										</div>
+									</td>
+									
+									<td valign="top">
+										<strong class="colore93">
+											<span class="reb colore93">￥</span>
+											1769元
+										</strong>
+									</td>
+									<td valign="top">
+										<a href="###" class="del">删除</a>
+									</td>
+								</tr>-->
+							</tbody>
+							
+							
+						</table>
+					</div>
+					<div class="cartPrice">
+						<div class="cartAno">
+							<div class="ano01">
+								<input name="choseAll" type="checkbox" id="choseAll" checked="checked" />
+								<label for="choseAll">全选</label>
+							</div>
+							<div class="ano02">
+								<a href="###">删除选中商品</a>
+							</div>
+						</div>
+						<p id="shopNum"><!--商品数量总计：0件--></p>
+						<p>包装数量总计：0件</p>
+						<p>返利库币：0库币</p>
+						<p class="totalPriceBottom" id="totalPriceBottom">
+							商品金额总计(不含税金和运费)：<span class="rmd"></span><strong>3419.00</strong>
+						</p>
+						<p class="clear">
+							<a href="index.html" class="a01" target="_blank">继续购物</a>
+							<a href="###" class="a02">立即结算</a>
+							
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			
+		</div>
+		
+	</body>
+</html>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/shopcar.js"></script>
+<script>
+	window.onload = function(){
+		obtainCookie();
+		
+		
+		$(".del").click(function(){
+			var id = $(this).data("id");
+			console.log(id);
+		})
+		
+		
+		
+	}
+</script>
+

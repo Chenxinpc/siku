@@ -358,7 +358,7 @@
 						<a href="#" class="iconfont icon-right"></a>
 					</div>
 				</div>
-				<div class="cen-content clear" id="cen-content">
+				<div class="cen-content clear" id="cen_content">
 					<!--<div class="con_item">
 						<a href="#"><img src="baoimg/bao1.jpg"></a>
 						<div  id="con_item_span" class="con_item_span">
@@ -463,11 +463,12 @@
 
 </html>
 <script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/cookie.js"></script>
 <script src="js/bao.js"></script>
 <script>
 	baoAjax();
 	window.onload = function(){
-		
+		shoplist();
 		var more = document.getElementsByClassName("more");
 		
 		for (var i=0; i<more.length; i++){
@@ -493,7 +494,7 @@
 		
 		
 		
-		var content = document.getElementById("cen-content");
+		var content = document.getElementById("cen_content");
 		var item = content.children;
 		for (var i=0; i<item.length; i++){
 			itemSpan(item[i]);
@@ -510,7 +511,19 @@
 			if(scrollTop >100 ){
 				document.getElementsByClassName("fixedTop")[0].style.display = "block";
 				document.getElementsByClassName("fixedTop")[0].onclick = function(){
-					document.documentElement.scrollTop = document.body.scrollTop = "0";
+//					document.documentElement.scrollTop = document.body.scrollTop = "0";
+					clearInterval(time);
+					var speed = 100;
+					var time = setInterval(function(){
+						console.log(scrollTop)
+						if(scrollTop <= 0){
+							clearInterval(time);
+						}
+						
+						scrollTop = scrollTop - speed;;
+						
+						document.documentElement.scrollTop = document.body.scrollTop = scrollTop;
+					},15)
 				}
 				
 			} else {

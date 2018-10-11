@@ -394,7 +394,7 @@
   margin-top: 10px;
   display: none;
 }
-.center .cen-center .cen-content .con_item .shopping a {
+.center .cen-center .cen-content .con_item .shopping button {
   width: 70px;
   height: 22px;
   text-align: center;
@@ -403,8 +403,9 @@
   float: left;
   color: #FFF;
   background: #e93b39;
+  border: 0;
 }
-.center .cen-center .cen-content .con_item .shopping a:hover {
+.center .cen-center .cen-content .con_item .shopping button:hover {
   background: #d32220;
 }
 .center .cen-center .cen-content .con_item .shopping span {

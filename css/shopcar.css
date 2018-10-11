@@ -1,0 +1,216 @@
+html, body {
+  width: 100%;
+}
+
+input[type=checkbox] {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.head {
+  width: 100%;
+  background: #323232;
+  height: 70px;
+  overflow: hidden;
+}
+.head .carHader {
+  width: 990px;
+  margin: 0 auto;
+}
+.head .carHader .logo {
+  float: left;
+}
+.head .carHader .carHader_fr {
+  float: right;
+}
+
+.center {
+  padding-bottom: 20px;
+  width: 100%;
+  background: #f6f6f6;
+}
+.center .centerBox {
+  width: 990px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.center .centerBox .carNav {
+  position: relative;
+  z-index: 2;
+  color: #666;
+  margin-bottom: -2px;
+}
+.center .centerBox .carNav .navLogin {
+  line-height: 28px;
+  margin-top: 4px;
+  padding-left: 18px;
+  float: left;
+}
+.center .centerBox .carNav .navLogin a {
+  color: #E93B39;
+  padding: 0 10px;
+}
+.center .centerBox .cartBox .cartSlist {
+  width: 986px;
+  border: 1px solid #f1f1f1;
+  padding: 1px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.center .centerBox .cartBox .cartSlist .carTable {
+  width: 100%;
+  color: #666;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr th {
+  height: 48px;
+  font-weight: normal;
+  color: #999999;
+  border-bottom: 1px solid #fff;
+  background: url(../image/c_02.jpg);
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td {
+  padding: 20px 0 15px;
+  border-top: 1px solid #ececec;
+  text-align: center;
+  line-height: 22px;
+  margin-top: -1px;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .carPic {
+  padding-right: 15px;
+  float: left;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .carPic img {
+  border: 1px solid #ECECEC;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .cartNames {
+  width: 255px;
+  overflow: hidden;
+  float: left;
+  text-align: left;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .cartNames .namePro {
+  width: 100%;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .cartNames .namePro a {
+  color: #333;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .cartNames .namePro a:hover {
+  text-decoration: underline;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .rmd {
+  font-family: microsoft yahei;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .countNum {
+  width: 58px;
+  margin: 0 auto 2px;
+  overflow: hidden;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .countNum .cPlus, .center .centerBox .cartBox .cartSlist .carTable tr td .countNum .cMinus {
+  width: 11px;
+  height: 18px;
+  float: left;
+  line-height: 16px;
+  text-align: center;
+  color: #666;
+  padding-right: 1px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .countNum .cInput {
+  margin-top: -1px;
+  float: left;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .countNum .cInput .Num {
+  width: 30px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  border-left: 0;
+  border-right: 0;
+  color: #666;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .colore93 {
+  color: #e93b39;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr td .del {
+  color: #333;
+}
+.center .centerBox .cartBox .cartSlist .carTable tr .addChecked td {
+  background: #fdf0ef;
+}
+.center .centerBox .cartBox .cartPrice {
+  padding: 15px 45px 25px 30px;
+  margin-top: 6px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+}
+.center .centerBox .cartBox .cartPrice .cartAno {
+  width: 300px;
+  height: 30px;
+  position: absolute;
+  left: 31px;
+  top: 17px;
+  overflow: hidden;
+}
+.center .centerBox .cartBox .cartPrice .cartAno .ano01 {
+  width: 78px;
+  position: relative;
+  top: 1px;
+  float: left;
+}
+.center .centerBox .cartBox .cartPrice .cartAno .ano02 {
+  padding-left: 20px;
+  background: url(../image/c_06.jpg) no-repeat 0px 0px;
+  cursor: pointer;
+  color: #c69c6d;
+  height: 16px;
+  line-height: 16px;
+  padding-top: 1px;
+  float: left;
+}
+.center .centerBox .cartBox .cartPrice .cartAno .ano02 a {
+  color: #666;
+}
+.center .centerBox .cartBox .cartPrice p {
+  text-align: right;
+  padding: 4px 0;
+  color: #333;
+}
+.center .centerBox .cartBox .cartPrice p span {
+  color: #9d003f;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+}
+.center .centerBox .cartBox .cartPrice p strong {
+  font-family: tahoma;
+  color: #E93B39;
+  font-size: 30px;
+  font-weight: normal;
+}
+.center .centerBox .cartBox .cartPrice p .a01 {
+  padding: 5px 15px;
+  border: 1px solid #E93B39;
+  color: #E93B39;
+  background: none;
+  margin-top: 12px;
+  float: left;
+}
+.center .centerBox .cartBox .cartPrice p .a02 {
+  padding: 10px 40px;
+  background: #E93B39;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "microsoft yahei";
+  float: right;
+}
+.center .centerBox .cartBox .cartPrice .totalPriceBottom {
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=shopcar.css.map */
