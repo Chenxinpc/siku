@@ -8,7 +8,7 @@ function obtainCookie(){
 						<input type="checkbox" class="checkBox" data-id="${list.id}"/>
 					</td>
 					<td width="97" valign="top">
-						<div class="carPic">
+						<div class"carPic">
 							<a href="#" target="_blank">
 								<img src="baoimg/${list.src}.jpg" width="80" height="80"/>
 							</a>
